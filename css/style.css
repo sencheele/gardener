@@ -1,0 +1,92 @@
+body {
+  overflow: hidden;
+}
+
+.garden-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: aqua;
+}
+
+.garden-map {
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.block {
+  outline: 1px solid transparent;
+  background-color: #3d8847;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: outline-color 0.3s ease;
+}
+
+.block:hover {
+  z-index: 10;
+  outline-color: #fff;
+}
+
+/* bottom */
+.block-side {
+  background-image: url('../img/side.jpg');
+}
+
+/* left */
+.block-side-90 {
+  transform: rotate(90deg);
+}
+
+/* top */
+.block-side-180 {
+  transform: rotate(180deg);
+}
+
+/* right */
+.block-side-270 {
+  transform: rotate(270deg);
+}
+
+/* bottomRight */
+.block-corner {
+  background-image: url('../img/corner.jpg');
+}
+
+/* bottomLeft */
+.block-corner-90 {
+  transform: rotate(90deg);
+}
+
+/* topLeft */
+.block-corner-180 {
+  transform: rotate(180deg);
+}
+
+/* topRight */
+.block-corner-270 {
+  transform: rotate(270deg);
+}
+
+
+/* bottomCornerRight */
+.block-cornerSide {
+  background-image: url("../img/cornerSide.jpg");
+}
+
+
+.block-cornerSide-90 {
+  transform: rotate(90deg);
+}
+
+
+.block-cornerSide-180 {
+  transform: rotate(180deg);
+}
+
+
+.block-cornerSide-270 {
+  transform: rotate(270deg);
+}
